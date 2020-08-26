@@ -18,6 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/recetas', 'RecetaCopntroller');
+Route::get('/recetas', 'RecetaController');
  //funcion que toma como parametro la vista a mostrar
     //return view('nosotros');
