@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    //funcion que toma como parametro la vista a mostrar
     return view('welcome');
 });
+
+Route::get('/recetas', 'RecetaCopntroller');
+ //funcion que toma como parametro la vista a mostrar
+    //return view('nosotros');
