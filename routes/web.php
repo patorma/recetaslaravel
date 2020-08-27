@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +20,9 @@ Route::get('/', function () {
 });
 
 Route::get('/recetas', 'RecetaController');
- //funcion que toma como parametro la vista a mostrar
-    //return view('nosotros');
+//funcion que toma como parametro la vista a mostrar
+//return view('nosotros');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
